@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #4f46e5, #9333ea);
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 380px;
+      padding: 40px 32px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .login-card h1 {
+      text-align: center;
+      margin-bottom: 8px;
+      color: #1f2937;
+    }
+
+    .login-card .subtitulo {
+      text-align: center;
+      margin-bottom: 28px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .campo {
+      margin-bottom: 18px;
+    }
+
+    .campo label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #374151;
+    }
+
+    .campo input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .campo input:focus {
+      outline: none;
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+    }
+
+    .opcoes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 22px;
+      font-size: 13px;
+    }
+
+    .opcoes a {
+      color: #4f46e5;
+      text-decoration: none;
+    }
+
+    .opcoes a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #4f46e5;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    button:hover {
+      background: #4338ca;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    .cadastro {
+      margin-top: 22px;
+      text-align: center;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .cadastro a {
+      color: #4f46e5;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="login-card">
+    <h1>Bem-vindo</h1>
+    <p class="subtitulo">Entre com sua conta para continuar</p>
+
+    <form action="#" method="post">
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+      </div>
+
+      <div class="opcoes">
+        <label><input type="checkbox" name="lembrar"> Lembrar de mim</label>
+        <a href="#">Esqueci a senha</a>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <p class="cadastro">Não tem conta? <a href="#">Cadastre-se</a></p>
+  </main>
+
+</body>
+</html>
